@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="assets/images/alura.jpg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <title>Jogo da Forca</title>
+  </head>
+  <body>
+
+      <main>
+
+        <div class="buttons">
+            <h2>Jogo da Forca</h2>
+            <button class="btn-init">INICIAR JOGO</button>
+            <input id="new-word" type="text" onkeyup="getWord()" 
+                onkeydown="getWord()" placeholder="Escreva uma nova palavra" >  
+            <button id="add-word" class="add-word">ADICIONAR PALAVRA</button>
+        </div>  
+
+        <div class="desenho">
+
+          <div class="canvas">
+            
+            <canvas id="r16" width="120" height="5"></canvas>
+            <div class="r1517">
+              <canvas id="r15" width="5" height="300"></canvas>
+
+              <div >
+                <canvas id="r17" width="5" height="50"></canvas>
+                <canvas id="r18" width="50" height="50" ></canvas>  
+              
+                <div class="tronco">
+                  <canvas id="r19" width="5" height="0" ></canvas>
+                  <canvas id="r20" width="5" height="80" ></canvas>
+                  <canvas id="r21" width="5" height="0" ></canvas>
+                </div>  
+                
+                <div class="pernas">
+                  <canvas id="r22" width="5" height="0" ></canvas>
+                  <canvas id="r23" width="5" height="0" ></canvas>  
+                </div>
+                
+              </div>  
+            </div>
+
+            <canvas id="r14" width="250" height="5"></canvas>  
+          </div>
+        
+          <div class="container-word">
+                <div class="msg-final"></div>
+                <div class="erros"></div>
+                <div class="word-secret"></div>
+          </div>
+
+        </div>
+
+        <button id="desistir">DESISTIR</button>
+
+      </main>
+  
+  </body>
+
+  <script src="js/index.js"></script>
+
+</html>

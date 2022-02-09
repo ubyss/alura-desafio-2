@@ -1,0 +1,162 @@
+
+body {
+  margin: 0;
+}  
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.desenho {
+  display: flex;
+  margin-top: 20px;
+}
+
+.container-word {
+  align-self: flex-end;
+  margin-left: 50px;
+}
+
+.msg-final {
+  text-align: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.erros {
+  margin-bottom: 200px;
+  text-align: right;
+  font-size: 30px;  
+}
+
+.word-secret {
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.btn-init, .add-word, #desistir {
+  cursor: pointer; 
+  background-color: #0A3871;
+  height: 33px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+#desistir {
+  margin-block: 20px;
+  display: none;
+}
+
+.add-word {
+  margin-top: 15px;
+}
+
+#new-word {
+  width: 500px;
+  height: 50px;
+  margin-top: 40px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding-left: 10px;
+}
+
+#r15 {
+  margin-left: 60px;
+  margin-bottom: -13px;
+}
+
+#r16 {
+  margin-left: 60px;
+  margin-bottom: -7px;
+}
+
+#r17 {
+  margin-left: 110px;
+  margin-bottom: 51px;
+}
+
+#r18 {
+  margin-left: -31px;
+  border-radius: 50%;
+}
+
+#r19, #r22 {
+  transform: rotate(30deg);
+  margin-top: -3px;
+  height: 50px;
+}
+
+#r20 {
+  margin-left: 10px;
+}
+
+#r21, #r23 {
+  transform: rotate(-30deg);
+  margin-top: -4px;
+  margin-left: 10px;
+  height: 50px;
+}
+
+#r23  {
+  margin-left: 25px;
+  margin-top: -3px;
+}
+
+.r1517 {
+  display: flex;
+}
+
+.tronco, .pernas {
+  display: flex;
+  margin-left: 95px;
+  margin-top: -4px;
+}
+
+
+@media (max-width: 900px) {
+  .desenho {
+      flex-direction: column;
+  }
+  .msg-final {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .erros {
+    margin-bottom: 20px;
+    text-align: center;  
+  }
+  .container-word {
+    align-self: center;
+    margin-left: 0;
+    margin-inline: 20px;
+    padding-bottom: 20px;
+  }
+  #desistir {
+    margin-block: 0;
+  } 
+}
+
+
+@media (max-width: 550px) {
+  #new-word {
+    width: 91%;
+  }
+}
